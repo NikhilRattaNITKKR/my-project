@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title><%= title %></title>
+  <script src="https://kit.fontawesome.com/7d0e898fba.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+  <link rel='stylesheet' type="text/css" href='\stylesheets\home.css' >
+
+</head>
+<body>
+  <div id="topbar">
+    <h1><i class="fas fa-bug"></i>  Debuggers</h1>
+    <nav>
+      <ul>
+        <li><a href="\">HOME</a></li>
+        <li><a href="\">ABOUT US</a></li>
+        <li><a href="\profile">MY PROFILE</a></li>
+        if(locals.tval) {
+          <li><a href="/postProject">POST A PROJECT</a></li>
+           }
+          <li><a href="/resources">RESOURCES</a></li>
+          <li><button type="button" name="button" onclick="signOut()">Sign Out</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="sidebar">
+      <h1>Filter by</h1>
+      <label for="">Domain:</label>
+      <select onclick="filter()" id="select1">
+        <option value="All">All</option>
+        <option value="Android Development">Android Development</option>
+        <option value="Web Development">Web Development</option>
+        <option value="AI/Machine learning">AI/Machine learning</option>
+      </select>
+      <label for="">Difficulty:</label>
+      <select onclick="filter()" id="select2">
+        <option value="All">All</option>
+        <option value="Level-I">Level-I</option>
+        <option value="Level-II">Level-II</option>
+        <option value="Level-III">Level-III</option>
+      </select>
+    </div>
+    <div id="projectsection">
+
+      <% console.log(locals.projects.length) %>
+
+      <% for(let i=locals.projects.length-1; i>=0; i-- ) { %>
+
+        <div class="project">
+          <p class="threadname"><%= projects[i].title %></p>
+          <div class="domain-difficulty">
+            <p class="domain"><%= projects[i].type %></p>
+            <p class="difficulty"><%= projects[i].level %></p>
+          </div>
+          <p class="description"><%= projects[i].desc %></p>
+          <div class="buttons">
+            <button type="button" name="button" class="projectbuttons"><a href="/profile" type="button">Visit Thread Profile</a>
+            </button>
+            <button type="button" name="button" class="projectbuttons">Message  Thread</button>
+            <button type="button" name="button" class="projectbuttons"> Request to join</button>
+          </div>
+        </div>
+        <% } %>
+        <div class="project" >
+          <p class="threadname">Thread Name</p>
+          <div class="domain-difficulty">
+            <p class="domain">Android Development</p>
+            <p class="difficulty">Level-I</p>
+          </div>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="buttons">
+            <button type="button" name="button" class="projectbuttons">Visit Thread profile</button>
+            <button type="button" name="button" class="projectbuttons">Message  Thread</button>
+            <button type="button" name="button" class="projectbuttons"> Request to join</button>
+          </div>
+        </div>
+      </div>
+
+      <script  src="/javascripts/home.js"></script>
+
+    </body>
+    </html>

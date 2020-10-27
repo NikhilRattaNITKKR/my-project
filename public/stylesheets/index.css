@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-align: none;
+  text-decoration: none;
+}
+hr {
+  margin: 80px 400px 80px 400px;
+  position: relative;
+  border-color: white;
+}
+button{
+  outline: none;
+  background-color: #F2F4EF;
+  position:absolute;
+  font-size: 20px;
+  height: 7%;
+  width:100%;
+  font-family: "Baskervville", bold;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+ background-color: #FF4835;
+ border-color: #FF4835;
+ color: white;
+}
+button:hover i{
+  transform: translateX(20px);
+  transition: transform 0.3s linear;
+}
+
+
+.homePage {
+  background: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0)), url('/images/team.jpg');
+  background-size: cover;
+  height:720px;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* p tag */
+.introduction {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#topbar {
+  background-color: black;
+  height: 10vh;
+  z-index: 10;
+  width: 100%;
+  padding: 0;
+  margin:0;
+  font-size: 120%;
+  position: fixed;
+  top: 0;
+  transition-property: background-color;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+ }
+#topbar h1 {
+  color:#F2F4EF;
+  display: inline-block;
+  padding-left: 6%;
+  font-size: 30px;
+  font-family: 'Libre Baskerville', serif;}
+#topbar nav {
+  float: right;
+  margin: 0;
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-right: 10%;
+}
+#topbar nav ul li {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0%;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Metal Mania';}
+    /* font-family: "BrandonText", Helvetica, Arial, sans-serif;
+    font-size: 14px;} */
+    #topbar nav ul li a{
+     color: white;
+   }
+
+/* */
+#idtagLine {
+  width: 100%;
+  margin: 0;
+}
+.imgHello {
+  display: inline-block;
+  width: 600px;
+}
+#idtagLine h1 {
+  font-size: 50px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  color: white;
+}
+
+#idtagLine button{
+  margin-top: 150px;
+  display: inline-block;
+  left: 100px;
+  width:15%;
+position: absolute;
+top: 350px;
+left: 180px;
+}
+#aboutText{
+  width: 60%;
+  margin: 50px auto;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+#aboutText h1{
+  text-align: center;
+  font-size: 60px;
+}
+#aboutText p{
+  margin: 20px auto;
+  margin-bottom:40px;
+  font-size: 30px;
+}
+/* */
+#idthread {
+  width: 100%;
+ margin-bottom: 10vh;
+ }
+#idThread h2 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 30px 0;
+}
+#idThread p {
+  text-align: left;
+  width: 80%;
+  margin: 10px auto;
+}
+#idThread button {
+  width: 20%;
+  margin: 8% auto;
+}
+#WIT {
+  display: inline-block;
+  width: 60%;
+}
+
+/* */
+#idFeatures{
+  margin: 5% auto;
+}
+#idFeatures i {
+  margin: 50px 0 0 25px;
+  width: 100%;
+  text-align: center;
+}
+#idFeatures p{
+  width: 50%;
+  text-align:left;
+  margin: 10px 0 0 135px;
+}
+.feature {
+  display: inline-block;
+  width:30%;
+}
+.transition{
+  transition-property: background-color;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+}
+.featuresbackground{
+}
+
+
+.languages {
+  background-color: rgba(3, 3, 5, 1);
+}
+.languages h1 {
+  color: white;
+  font-family: 'Crimson Text', serif;
+  font-size: 60px;
+  margin-top: 0;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 50px;}
+.languages p{
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+  }
+.languages li {
+    display: table-cell;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.team h1 {
+  margin: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+.members3 {
+  margin-top: 20px;
+  margin-left: 450px;
+}
+.members2 {
+  margin-top: 10px;
+  margin-left: 550px;
+}
+.team p {
+  text-align: center;
+  font-size: 20px;
+  display: inline-table;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.policy p {
+  text-align: center;
+  margin-left: 500px;
+  width: 500px;
+}
+
+
+
+
+
+/**/

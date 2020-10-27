@@ -1,0 +1,128 @@
+*{
+font-family: 'Zilla Slab', serif;
+}
+body{
+  margin: 0;
+  background-color: rgba(0,0,0,0.1);
+}
+#topbar{
+display:flex;
+background-color: black;
+color: white;
+height: 9vh;
+}
+#topbar nav{
+position: absolute;
+display: inline-flex;
+right: 0;
+}
+#topbar nav li{
+display: inline-block;
+padding: 0 20px;
+}
+#topbar h1{
+  padding: 0;
+  margin: auto 0;
+  margin-left: 20px;
+}
+#topbar nav li a{
+text-decoration: none;
+color: white;
+}
+#topbar span{
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+}
+#topbar span:hover{
+  background-color:red;
+  color: white;
+}
+
+#heading{
+background-color: #ffffff;
+}
+#heading h1{
+padding: 20px;
+margin: 0 auto;
+font-size: 60px;
+}
+h1{
+text-align: center;
+}
+.project{
+width: 90%;
+background-color: white;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+margin: 30px auto;
+}
+.threadname{
+width: 90%;
+margin: 0 auto;
+font-size: 40px;
+padding: 10px;
+border-bottom: solid 1px black; }
+.description{
+width: 90%;
+margin: 0 auto;
+margin-top: 10px;
+font-size: 30px;
+padding: 10px;
+line-height: 150%;
+}
+.projectbuttons{
+width: 20%;
+margin: 10px 20px;
+margin-left: 0;
+font-size: 20px;
+padding: 10px;
+border-radius: 20px;
+border:solid 1px black;
+outline: none;
+}
+.buttons{
+width: 90%;
+margin: 10px auto;
+}
+.domain-difficulty{
+width: 90%;
+margin: 10px auto;
+}
+.domain{
+display: inline-block;
+width: 45%;
+font-size: 30px;
+}
+.difficulty{
+display: inline-block;
+width: 45%;
+font-size: 30px;
+text-align:right;
+}
+#sidebar{
+float:left;
+width: 20%;
+height:74vh;
+background-color: white;
+display: inline-block;
+}
+#projectsection{
+height: 73vh;
+overflow-y: scroll;
+margin: 0 auto;
+display: inline-block;
+width: 80%;
+}
+select{
+width: 60%;
+font-size: 25px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+label{
+width: 30%;
+font-size: 25px;
+margin-right: 10px;
+}

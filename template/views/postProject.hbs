@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>post a project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d0e898fba.js" crossorigin="anonymous"></script>
+    <style media="screen">
+    *{
+      font-family: 'Zilla Slab', serif;
+     }
+    body{
+      margin: 0;
+      background-color: rgb(249, 241, 241);
+    }
+    #topbar{
+    display:flex;
+    background-color: black;
+    color: white;
+    height: 9vh;
+    }
+    #topbar nav{
+    position: absolute;
+    display: inline-flex;
+    right: 0;
+    }
+    #topbar nav li{
+    display: inline-block;
+    padding: 0 20px;
+    }
+    #topbar h1{
+      padding: 0;
+      margin: auto 0;
+      margin-left: 20px;
+    }
+    #topbar nav li a{
+    text-decoration: none;
+    color: white;
+    }
+    #topbar button{
+      border-radius: 30px;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px;
+      border: none;
+    }
+    #topbar button:hover{
+      background-color:red;
+      color: white;
+    }
+
+    #container{
+      width: 88%;
+      margin: 30px auto;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      align-content: center;
+
+    }
+    .heading{
+      display: inline-block;
+    width: 20%;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+
+  }
+  #label{
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: solid 1px black;
+  }
+  .description{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 10px;
+    line-height: 150%;
+    }
+
+    input,textarea {
+      display: inline-block;
+    padding: 10px;
+    margin: 20 auto;
+    width: 70%;
+    font-size: 23px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+
+    }
+    input:nth-of-type(1){
+      display: inline-block;
+      padding: 10px;
+      width: 23%;
+      font-size: 23px;
+      border: 1px solid grey;
+      border-radius: 8px;
+    outline: none;
+    text-align: center;
+    }
+
+    select{
+      display: inline-block;
+      padding: 10px;
+      width: 25%;
+      font-size: 23px;
+      border: 1px solid grey;
+      border-radius: 8px;
+    outline: none;
+    text-align: center;
+    }
+  #container button{
+    width: 25%;
+    background-color:orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 28px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline:none;
+    margin: 10px auto;
+    margin-left: 40%;
+  }
+    #container button:hover{
+      opacity: 0.6;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="topbar">
+     <h1><i class="fas fa-bug"></i>  Debuggers</h1>
+    <nav>
+       <ul>
+      <li><a href="\projects">HOME</a></li>
+      <li><a href="\">ABOUT US</a></li>
+      <li><a href="\myprojects">MY PROJECTS</a></li>
+      <li><a href="\profile">MY PROFILE</a></li>
+      <li><button type="button" name="button" onclick="signOutAdmin()">Sign Out</button></li>
+     </ul>
+   </nav>
+    </div>
+    <div id="container">
+      <h1 id="label">Post a Project</h1>
+      <p class="heading">Project Title :</p>
+      <input type="text" name="" value="">
+
+      <p class="heading">Select Project Category :</p>
+      <select >
+        <option >Basic Start</option>
+        <option>App Development</option>
+        <option >Game Development</option>
+        <option >Web Development</option>
+      </select>
+      <p class="heading">Skills Required :</p>
+      <select >
+        <option >Java</option>
+        <option>C++</option>
+        <option >Kotlin</option>
+        <option >Ruby</option>
+      </select>
+      <p class="heading">Select Difficulty :</p>
+      <select>
+        <option value="All">All</option>
+        <option value="Level-I">Level-I</option>
+        <option value="Level-II">Level-II</option>
+        <option value="Level-III">Level-III</option>
+      </select>
+        <p class="heading">Project Description :</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <button type="button" name="button">Post Project</button>
+    </div>
+  </body>
+</html>
